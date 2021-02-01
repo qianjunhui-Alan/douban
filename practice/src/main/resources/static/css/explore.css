@@ -1,0 +1,191 @@
+body {
+  margin: 0; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.content {
+  padding-top: 61px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .content .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    line-height: 17px;
+    color: #979797; }
+    .content .top .mhz {
+      display: flex;
+      align-items: center; }
+      .content .top .mhz .img {
+        background: url(../images/image16.png) no-repeat center/contain;
+        width: 24px;
+        height: 24px;
+        margin-right: 2px; }
+      .content .top .mhz .text {
+        color: #2F9842;
+        margin-right: 50px; }
+    .content .top .collection {
+      display: flex;
+      align-items: center; }
+      .content .top .collection .img {
+        background: url(../images/image17.png) no-repeat center/contain;
+        width: 17px;
+        height: 17px;
+        margin-right: 7px; }
+      .content .top .collection .text {
+        margin-right: 50px; }
+    .content .top .my {
+      display: flex;
+      align-items: center; }
+      .content .top .my .img {
+        background: url(../images/image21.png) no-repeat center/contain;
+        width: 16px;
+        height: 14px;
+        margin-right: 7px; }
+  .content .option {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .content .option .private {
+      display: flex;
+      align-items: center; }
+      .content .option .private .img {
+        background: url(../images/image20.png) no-repeat center/contain;
+        width: 40px;
+        height: 40px;
+        margin-right: 15px; }
+      .content .option .private .box .title {
+        font-size: 12px;
+        line-height: 17px;
+        color: #000000; }
+      .content .option .private .box .description {
+        font-size: 12px;
+        line-height: 17px;
+        color: #BCBBBB;
+        margin-top: 10px; }
+    .content .option .douban {
+      align-items: center;
+      display: flex; }
+      .content .option .douban .img {
+        background: url(../images/image19.png) no-repeat center/contain;
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+        margin-left: 120px; }
+      .content .option .douban .box .title {
+        font-size: 12px;
+        line-height: 17px;
+        color: #000000; }
+      .content .option .douban .box .description {
+        font-size: 12px;
+        line-height: 17px;
+        color: #BCBBBB;
+        margin-top: 10px; }
+  .content .artist {
+    width: 1050px;
+    margin-top: 50px; }
+    .content .artist .none {
+      display: none; }
+    .content .artist .info {
+      display: flex;
+      align-items: center; }
+      .content .artist .info .name {
+        font-size: 14px;
+        line-height: 20px;
+        color: #A6A6A6;
+        margin-right: 10px; }
+      .content .artist .info img {
+        width: 15px;
+        height: 17px; }
+    .content .artist ul {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; }
+      .content .artist ul li {
+        width: 204px;
+        height: 248px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px #EFEFEF solid; }
+        .content .artist ul li .information {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+          .content .artist ul li .information img {
+            text-align: center;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            margin-bottom: 20px; }
+          .content .artist ul li .information .name {
+            text-align: center;
+            font-size: 14px;
+            line-height: 20px;
+            color: #000000;
+            margin-bottom: 10px; }
+          .content .artist ul li .information .othersingers {
+            text-align: center;
+            font-size: 12px;
+            line-height: 17px;
+            color: #B0B0B0; }
+    .content .artist .loadmore {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px; }
+      .content .artist .loadmore button {
+        width: 110px;
+        font-size: 12px;
+        line-height: 17px;
+        color: #AEAEAE;
+        background: #FFFFFF;
+        border: 1px solid #E0E0E0;
+        box-sizing: border-box; }
+  .content .otherstyles {
+    width: 1024px;
+    margin-top: 40px; }
+    .content .otherstyles .title {
+      font-size: 12px;
+      line-height: 17px;
+      color: #A6A6A6;
+      margin-bottom: 10px; }
+    .content .otherstyles ul {
+      display: flex;
+      flex-wrap: wrap; }
+      .content .otherstyles ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 204px;
+        height: 54px;
+        border-bottom: 1px #EFEFEF solid;
+        border-top: 1px #EFEFEF solid; }
+        .content .otherstyles ul li .name {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 20px;
+          color: #1C1C1C;
+          margin-right: 6px; }
+        .content .otherstyles ul li .mhz {
+          font-size: 12px;
+          line-height: 17px;
+          color: #A5A5A5; }
+
+/*# sourceMappingURL=explore.css.map */

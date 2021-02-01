@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/css/mhzdetail.css">
+</head>
+<body>
+<div th:replace="head::head"></div>
+<div th:fragment="mhzdetail">
+    <div class="content">
+        <div class="twocode">
+            <div class="top">
+                <img th:src="${singer.avatar}">
+                <div class="title">
+                    <div class="name" th:text="${singer.name}"></div>
+                    <div class="profession">艺术家</div>
+                </div>
+            </div>
+            <div class="center">
+                <img src="/images/image29.png">
+                <div class="scan">扫描分享到微信</div>
+            </div>
+            <div class="bottom">
+                <img src="/images/image30.png">
+                <img src="/images/image31.png">
+                <img src="/images/image32.png">
+                <img src="/images/image33.png">
+            </div>
+        </div>
+        <div class="share">
+            <img src="/images/image6.png">
+            <span>分享</span>
+        </div>
+        <div class="info">
+            <img th:src="${singer.avatar}">
+            <div th:text="${singer.name}"></div>
+            <button>喜欢  <span>1344</span></button>
+        </div>
+        <div class="allsongs">
+            <div class="play">
+                <img src="/images/image28.png">
+                <span>全部精选歌曲</span>
+            </div>
+            <ul>
+                <li th:each="song,it : ${songs}" th:classappend="${it.count} > 5 ? 'hidden': ''">
+                    <img th:src="${song.cover}" referrerPolicy="no-referrer">
+                    <a th:href="${song.url}">[[${it.count}]].[[${song.name}]]</a>
+                </li>
+            </ul>
+            <div class="view">查看全部精选歌曲</div>
+
+        </div>
+        <div class="simsingers">
+            <div class="play">
+                <img src="/images/image28.png" >
+                <span th:text="${subject.name}"></span>
+            </div>
+            <div class="simsongs">该兆赫可能包含以下相似艺术家的歌曲</div>
+            <ul>
+                <li th:each="singer : ${simSingers}">
+                    <img th:src="${singer.avatar}" >
+                    <a href="#" th:text="${singer.name}"></a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+
+
+<script src="/js/mhzdetail.js"></script>
+</body>
+</html>

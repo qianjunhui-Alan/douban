@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>首页第二屏</title>
+</head>
+<body>
+<div th:fragment="explore">
+    <div class="explore" th:replace="head::head" ></div>
+    <link rel="stylesheet" href="/css/explore.css">
+    <div class="content">
+        <div class="top">
+            <div class="mhz">
+                <div class="img"></div>
+                <div class="text">兆赫</div>
+            </div>
+            <div class="collection">
+                <div class="img"></div>
+                <div class="text">歌单</div>
+            </div>
+            <div class="my">
+                <div class="img"></div>
+                <div class="text">我的</div>
+            </div>
+        </div>
+        <div class="option">
+            <div class="private">
+                <div class="img"></div>
+                <div class="box">
+                    <div class="title">我的私人兆赫</div>
+                    <div class="description">豆瓣FM会根据你的喜好来推荐歌曲，让你与喜欢的音乐不期而遇</div>
+                </div>
+
+            </div>
+            <div class="douban">
+                <div class="img"></div>
+                <div class="box">
+                    <div class="title">豆瓣精选兆赫</div>
+                    <div class="description">汇聚各种音乐风格的精选兆赫，从这里开始音乐漫游吧</div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="artist">
+            <div class="info">
+                <div class="name">从艺术家出发</div>
+                <img src="/images/image22.png">
+            </div>
+            <ul >
+                <li th:each="artistData,it : ${artistDatas}" th:classappend="${it.count} > 10 ? 'none':''">
+                    <div class="information">
+                        <img th:src="${artistData.cover}">
+                        <a th:href="'/artist/?subjectId='+${artistData.id}" class="name" th:text="${artistData.name}"></a>
+                        <div class="othersingers">及其相似的艺术家们</div>
+                    </div>
+
+                </li>
+            </ul>
+
+            <div class="loadmore"><button>加载更多兆赫</button></div>
+        </div>
+        <div class="otherstyles"  th:each="mhzViewModel : ${mhzViewModels}">
+            <div class="title" th:text="${mhzViewModel.title}"></div>
+            <ul>
+                <li th:each="subject : ${mhzViewModel.subjects}">
+                    <div class="name">[[${subject.name}]]</div>
+                    <div class="mhz">MHz</div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<script src="/js/explore.js"></script>
+</body>
+</html>

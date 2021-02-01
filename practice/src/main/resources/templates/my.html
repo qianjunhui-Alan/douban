@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="layout" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>我的红心</title>
+</head>
+<div th:fragment="content">
+    <link rel="stylesheet" href="/css/my.css">
+    <div th:replace="head::head"></div>
+    <div class="content">
+        <div class="top">
+            <div class="mhz">
+                <div class="img"></div>
+                <div class="text">兆赫</div>
+            </div>
+            <div class="collection">
+                <div class="img"></div>
+                <div class="text">歌单</div>
+            </div>
+            <div class="my">
+                <div class="img"></div>
+                <div class="text">我的</div>
+            </div>
+        </div>
+        <div class="redheart">
+            <div class="txt">我的红心</div>
+        </div>
+        <div class="redsongs">
+            <img src="/images/image37.png" referrerPolicy="no-referrer">
+            <span>[[${songs.size()}]]首红心歌曲</span>
+        </div>
+        <div class="songList">
+            <ul>
+                <li th:if="${songs!=null}" th:each="song:${songs}">
+                    <img th:src="${song.cover}" referrerPolicy="no-referrer">
+                    <a th:href="${song.url}" th:text="${song.name}"></a>
+                </li>
+<!--                <li th:each="favorite:${favorites}">-->
+<!--                    <img th:src="${favorite.itemId}" referrerPolicy="no-referrer">-->
+<!--                    <div th:text="${favorite.itemType}"></div>-->
+<!--                </li>-->
+            </ul>
+        </div>
+
+    </div>
+</div>
+</html>

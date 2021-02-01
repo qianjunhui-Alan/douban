@@ -1,0 +1,188 @@
+body {
+  margin: 0; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 79px; }
+  .container .back {
+    text-align: center;
+    display: flex;
+    margin-right: 15px; }
+    .container .back img {
+      width: 13px;
+      height: 13px;
+      margin-right: 5px; }
+    .container .back span {
+      font-size: 12px;
+      line-height: 17px;
+      color: #767676; }
+  .container .box {
+    box-sizing: border-box;
+    width: 786px;
+    padding: 66px 100px 0 100px;
+    border: 1px solid #EAEAEA; }
+    .container .box .twocode {
+      display: none;
+      background: #FFFFFF;
+      z-index: 1000;
+      position: fixed;
+      margin-left: -128px;
+      left: 50%;
+      top: 70px;
+      width: 194px;
+      padding: 25px 30px 25px 30px;
+      border: 1px solid #EAEAEA; }
+      .container .box .twocode .top {
+        display: flex;
+        align-items: center;
+        padding-bottom: 24px;
+        border-bottom: 1px #F1F1F1 solid; }
+        .container .box .twocode .top img {
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+          margin-right: 15px; }
+        .container .box .twocode .top .title {
+          top: 0px; }
+          .container .box .twocode .top .title .name {
+            font-size: 12px;
+            line-height: 17px;
+            color: #000000;
+            margin-bottom: 2px; }
+          .container .box .twocode .top .title .profession {
+            font-size: 12px;
+            line-height: 17px;
+            color: #A4A4A4; }
+      .container .box .twocode .center {
+        margin: 0 auto;
+        width: 120px;
+        margin-top: 20px; }
+        .container .box .twocode .center img {
+          width: 120px;
+          height: 120px;
+          margin-bottom: 3px; }
+        .container .box .twocode .center .scan {
+          text-align: center;
+          font-size: 12px;
+          line-height: 17px;
+          color: #BABABA;
+          margin-bottom: 20px; }
+      .container .box .twocode .bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .container .box .twocode .bottom img {
+          width: 20px;
+          height: 20px;
+          margin-right: 15px; }
+          .container .box .twocode .bottom img:nth-child(4) {
+            margin-right: 0px; }
+    .container .box .top {
+      position: relative;
+      display: flex; }
+      .container .box .top img {
+        width: 180px;
+        height: 180px;
+        margin-right: 40px; }
+      .container .box .top .title {
+        position: relative;
+        top: -11px; }
+        .container .box .top .title .txt {
+          font-size: 30px;
+          line-height: 42px;
+          color: #000000;
+          margin-bottom: 5px; }
+        .container .box .top .title .create {
+          font-size: 12px;
+          line-height: 17px;
+          color: #ADADAD; }
+      .container .box .top .share {
+        cursor: pointer;
+        position: absolute;
+        right: -10px;
+        top: 90px; }
+        .container .box .top .share img {
+          width: 20px;
+          height: 20px; }
+    .container .box .subjectList {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px; }
+      .container .box .subjectList .songs {
+        cursor: pointer;
+        font-size: 12px;
+        line-height: 17px;
+        color: #000000;
+        margin-right: 30px; }
+      .container .box .subjectList .othercollections {
+        cursor: pointer;
+        font-size: 12px;
+        line-height: 17px;
+        color: #000000;
+        opacity: 0.4; }
+    .container .box .border {
+      background: #EAEAEA;
+      height: 1px; }
+    .container .box .songList {
+      margin-top: 30px; }
+      .container .box .songList ul li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 18px; }
+        .container .box .songList ul li img {
+          width: 20px;
+          height: 20px;
+          margin-right: 10px; }
+        .container .box .songList ul li a {
+          font-size: 12px;
+          line-height: 17px;
+          color: #000000; }
+    .container .box .othercollectionsList {
+      display: none;
+      cursor: pointer;
+      margin-top: 30px; }
+      .container .box .othercollectionsList ul li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px; }
+        .container .box .othercollectionsList ul li img {
+          width: 70px;
+          height: 70px;
+          margin-right: 20px; }
+        .container .box .othercollectionsList ul li .info {
+          font-size: 12px;
+          line-height: 17px;
+          color: #000000;
+          opacity: 0.3; }
+          .container .box .othercollectionsList ul li .info .name {
+            font-size: 14px;
+            line-height: 20px;
+            color: #000000;
+            margin-bottom: 2px; }
+          .container .box .othercollectionsList ul li .info .number {
+            margin-bottom: 14px; }
+  .container .close {
+    transform: rotate(45deg);
+    margin-left: 15px;
+    width: 14px;
+    height: 14px; }
+    .container .close img {
+      transform: rotate(45deg);
+      width: 14px;
+      height: 14px; }
+
+/*# sourceMappingURL=collectiondetail.css.map */

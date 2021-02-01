@@ -1,0 +1,83 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .main .content {
+    width: 1040px; }
+    .main .content .top {
+      cursor: pointer;
+      margin-bottom: 238px;
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      margin-left: 30px; }
+      .main .content .top img {
+        width: 13px;
+        height: 13px;
+        margin-right: 5px; }
+      .main .content .top span {
+        font-size: 12px;
+        line-height: 17px;
+        color: #767676; }
+    .main .content .center {
+      display: flex;
+      width: 310px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      border-bottom: 1px solid #E2E2E2;
+      margin-bottom: 39px; }
+      .main .content .center .login {
+        cursor: pointer;
+        width: 155px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        color: #000000;
+        opacity: 0.4;
+        text-align: center; }
+      .main .content .center .register {
+        cursor: pointer;
+        text-align: center;
+        width: 155px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        color: #000000;
+        box-sizing: border-box;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #1C1C1C; }
+    .main .content form {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .main .content form input {
+        padding-left: 15px;
+        background: #FFFFFF;
+        border: 1px solid #E2E2E2;
+        box-sizing: border-box;
+        width: 310px;
+        height: 40px;
+        margin-bottom: 10px; }
+      .main .content form .button {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .main .content form .button button {
+          cursor: pointer;
+          width: 310px;
+          height: 40px;
+          background: #33BD4C;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 22px;
+          color: #FFFFFF;
+          outline: none;
+          border: none; }
+
+::-webkit-input-placeholder {
+  font-size: 12px;
+  line-height: 17px;
+  color: #8D8D8D; }
+
+/*# sourceMappingURL=sign.css.map */

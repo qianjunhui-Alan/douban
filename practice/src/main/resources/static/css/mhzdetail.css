@@ -1,0 +1,205 @@
+ul {
+  padding: 0;
+  margin: 0; }
+
+ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+body {
+  width: 100%; }
+
+.content {
+  border: 1px solid #eaeaea;
+  box-sizing: border-box;
+  width: 786px;
+  margin: 0 auto;
+  margin-top: 79px; }
+  .content .twocode {
+    display: none;
+    background: #FFFFFF;
+    z-index: 1000;
+    position: fixed;
+    margin-left: -128px;
+    left: 50%;
+    top: 70px;
+    width: 194px;
+    padding: 25px 30px 25px 30px;
+    border: 1px solid #EAEAEA; }
+    .content .twocode .top {
+      display: flex;
+      align-items: center;
+      padding-bottom: 24px;
+      border-bottom: 1px #F1F1F1 solid; }
+      .content .twocode .top img {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        margin-right: 15px; }
+      .content .twocode .top .title .name {
+        font-size: 12px;
+        line-height: 17px;
+        color: #000000;
+        margin-bottom: 2px; }
+      .content .twocode .top .title .profession {
+        font-size: 12px;
+        line-height: 17px;
+        color: #A4A4A4; }
+    .content .twocode .center {
+      margin: 0 auto;
+      width: 120px;
+      margin-top: 20px; }
+      .content .twocode .center img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 3px; }
+      .content .twocode .center .scan {
+        text-align: center;
+        font-size: 12px;
+        line-height: 17px;
+        color: #BABABA;
+        margin-bottom: 20px; }
+    .content .twocode .bottom {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .content .twocode .bottom img {
+        width: 20px;
+        height: 20px;
+        margin-right: 15px; }
+        .content .twocode .bottom img:nth-child(4) {
+          margin-right: 0px; }
+  .content .share {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 40px;
+    margin-right: 40px; }
+    .content .share img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px; }
+    .content .share span {
+      font-size: 14px;
+      line-height: 20px;
+      color: #9A9A9A; }
+  .content .info {
+    width: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -10px; }
+    .content .info img {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 30px;
+      border-radius: 50%; }
+    .content .info div {
+      font-size: 30px;
+      line-height: 42px;
+      color: #000000;
+      margin-bottom: 20px; }
+    .content .info button {
+      border: 1px solid #D7D7D7;
+      box-sizing: border-box;
+      font-size: 12px;
+      line-height: 17px;
+      color: #C5C5C5;
+      background: #FFFFFF;
+      margin-bottom: 40px;
+      cursor: pointer; }
+    .content .info .has-like {
+      border: 1px solid #FF4874;
+      box-sizing: border-box;
+      color: #FF4874; }
+  .content .allsongs {
+    border-bottom: 1px solid #EAEAEA;
+    border-top: 1px solid #EAEAEA;
+    width: 586px;
+    box-sizing: border-box;
+    margin: 0 93px 0 107px; }
+    .content .allsongs .play {
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 19px; }
+      .content .allsongs .play img {
+        width: 11px;
+        height: 14px;
+        margin-right: 10px; }
+      .content .allsongs .play span {
+        font-size: 12px;
+        line-height: 17px;
+        color: #2F9842; }
+    .content .allsongs ul li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 18px; }
+      .content .allsongs ul li img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px; }
+      .content .allsongs ul li a {
+        font-size: 12px;
+        line-height: 17px;
+        color: #000000; }
+    .content .allsongs ul .hidden {
+      display: none; }
+    .content .allsongs .view {
+      font-size: 12px;
+      line-height: 17px;
+      color: #AFAFAF;
+      margin-bottom: 40px; }
+  .content .simsingers {
+    width: 571px;
+    margin: 0 auto;
+    margin-top: 40px; }
+    .content .simsingers .play {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px; }
+      .content .simsingers .play img {
+        width: 11px;
+        height: 14px;
+        margin-right: 10px; }
+      .content .simsingers .play span {
+        font-size: 12px;
+        line-height: 17px;
+        color: #2F9842; }
+    .content .simsingers .simsongs {
+      font-size: 12px;
+      line-height: 17px;
+      color: #AFAFAF;
+      margin-bottom: 76px; }
+    .content .simsingers ul {
+      display: flex;
+      flex-wrap: wrap; }
+      .content .simsingers ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100px;
+        margin-bottom: 40px;
+        margin-right: 57px; }
+        .content .simsingers ul li img {
+          width: 100px;
+          height: 100px;
+          margin-bottom: 20px;
+          border-radius: 50%; }
+        .content .simsingers ul li a {
+          font-size: 14px;
+          line-height: 20px;
+          color: #000000;
+          text-align: center; }
+        .content .simsingers ul li:nth-child(4) {
+          margin-right: 0; }
+        .content .simsingers ul li:nth-child(8) {
+          margin-right: 0; }
+
+/*# sourceMappingURL=mhzdetail.css.map */

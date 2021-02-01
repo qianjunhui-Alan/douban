@@ -1,0 +1,25 @@
+<div th:fragment="share" xmlns:th="http://www.w3.org/1999/xhtml">
+    <link href="/css/share.css" rel="stylesheet">
+    <div class="twocode">
+        <div class="top">
+            <img th:src="${song.cover}" referrerpolicy="no-referrer">
+            <div class="title">
+                <div class="name">我不完美</div>
+                <div class="profession">歌单</div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="qr-code" id="qrcode"></div>
+            <div class="scan">扫描分享到微信</div>
+        </div>
+        <div class="bottom">
+            <img src="/images/image30.png">
+            <img src="/images/image31.png">
+            <img src="/images/image32.png">
+            <img src="/images/image33.png">
+        </div>
+
+        <script src="/js/qrcode-min.js"></script>
+        <script src="/js/share.js"></script>
+    </div>
+</div>

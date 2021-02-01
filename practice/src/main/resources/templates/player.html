@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>播放器</title>
+
+</head>
+<body>
+<div th:fragment="player" class="player">
+    <link rel="stylesheet" href="/css/player.css">
+    <audio th:src="${song.url}" controls></audio>
+    <div class="top">
+        <div class="top-left">
+            <div class="img"></div>
+            <div>下载豆瓣FM APP · 我要反馈</div>
+        </div>
+        <div class="top-right">登录 I 注册</div>
+    </div>
+    <div class="content">
+        <div class="twocode">
+            <div class="code"></div>
+            <div class="text">下载豆瓣FM APP<br/>让好音乐继续</div>
+        </div>
+        <div class="center">
+            <div class="name">
+                <div class="frequency">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                    <div class="four"></div>
+                    <div class="five"></div>
+                </div>
+                <div class="singer" >[[${singers.name}]]</div>
+                <div class="arrow">
+                </div>
+            </div>
+            <div class="title">[[${song.name}]]</div>
+            <div class="singer" >[[${singers.name}]]</div>
+            <div class="middle">
+                <div class="left">
+                    <div class="time">-03:34</div>
+                    <div class="volumn"></div>
+                </div>
+                <div class="right">
+                    <div class="lyrics"></div>
+                    <div class="download" ></div>
+                    <div class="share"></div>
+                </div>
+
+            </div>
+            <div class="border"></div>
+            <div class="bottom">
+                <div class="favourite"></div>
+                <div class="delete"></div>
+                <div class="sequence"></div>
+                <div class="random"></div>
+                <div class="last"></div>
+                <div class="play"></div>
+                <div class="next"></div>
+            </div>
+            <div class="login"><span>登录/注册</span> 后豆瓣FM将永久保留你的收听历史与喜好</div>
+        </div>
+
+        <div class="cover"><img th:src="${singers.avatar}"></div>
+
+    </div>
+
+
+    <div class="top-arrow"></div>
+    <div class="footer">
+        <div class="left">
+            <div class="mhz"></div>
+            <div class="text">兆赫</div>
+        </div>
+        <div class="right">
+            <div class="collection"></div>
+            <div class="text">歌单</div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

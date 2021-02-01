@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div th:fragment="userguide"></div>
+<div class="content">
+    <link rel="stylesheet" href="/css/userguide.css">
+    <div class="login">
+        <div class="hasaccount">已有账号登陆</div>
+        <img src="/images/image23.png">
+    </div>
+    <div class="title">挑选你喜欢的艺术家，开启私人音乐之旅</div>
+    <ul>
+        <li th:each="singer : ${singers}">
+            <img th:src="${singer.avatar}">
+            <div th:text="${singer.name}"></div>
+            <button class="like">喜欢</button>
+        </li>
+    </ul>
+    <div class="bottom">
+        <div class="top">
+            <div class="refresh">
+                <img src="/images/image25.png">
+                <div>换一批</div>
+            </div>
+            <div class="search">
+                <img src="/images/image24.png">
+                <div>自己搜</div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="img">
+                <img src="/images/image27.png">
+                <img src="/images/image27.png">
+                <img src="/images/image27.png">
+                <img src="/images/image27.png">
+                <img src="/images/image27.png">
+            </div>
+
+        </div>
+        <div class="skip">
+            <div>跳过，直接去听歌</div>
+            <img src="/images/image26.png">
+        </div>
+    </div>
+</div>
+
+<script src="/js/userguide.js" ></script>
+</body>
+</html>

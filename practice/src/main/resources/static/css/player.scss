@@ -1,0 +1,323 @@
+body{
+  margin: 0;
+}
+
+.player {
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    padding-top: 30px;
+
+    .top-left {
+      display: flex;
+      align-items: center;
+
+      .img {
+        background: url(../images/image1.png) no-repeat center /contain;
+        width: 80px;
+        height: 32px;
+        margin-right: 40px;
+      }
+
+      div {
+        font-family: PingFang SC;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 17px;
+        color: #B3B3B3;
+        margin-right: 706px;
+      }
+
+    }
+
+    .top-right {
+      font-size: 12px;
+      line-height: 17px;
+      /* identical to box height */
+
+
+      color: #B3B3B3;
+    }
+  }
+
+  .content {
+    margin: 0px auto;
+    margin-top: 144px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .twocode {
+      margin-right: 65px;
+      margin-top:78px;
+
+      .code {
+        background: url(../images/image14.png) no-repeat center/contain;
+        width: 78px;
+        height: 79px;
+      }
+
+      .text {
+        margin-top: 5px;
+        height: 28px;
+        font-weight: 200;
+        font-size: 10px;
+        line-height: 14px;
+        color: #979797;
+      }
+    }
+
+    .center{
+      margin-right: 56px;
+      .name{
+        display: flex;
+        align-items: center;
+        .frequency{
+          display: flex;
+          width: 10px;
+          justify-content: space-between;
+          align-items: flex-end;
+          margin-right: 10px;
+          .one{
+            width: 1px;
+            height: 10px;
+            background: #2F9842;;
+          }
+          .two{
+            width: 1px;
+            height: 5px;
+            background: #2F9842;;
+          }
+          .three{
+            width: 1px;
+            height: 7px;
+            background: #2F9842;;
+          }
+          .four{
+            width: 1px;
+            height: 3px;
+            background: #2F9842;;
+          }
+          .five{
+            width: 1px;
+            height: 8px;
+            background: #2F9842;;
+          }
+
+        }
+        .singer{
+          font-family: PingFang SC;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 22px;
+
+          color: #2F9842;
+          margin-right: 15px;
+          margin-bottom: 0px;
+        }
+        .arrow{
+          background: url(../images/image2.png) no-repeat center/contain;
+          width: 8px;
+          height:15px;
+        }
+      }
+      .title{
+        margin-top:60px;
+        font-family: PingFang SC;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 28px;
+        /* identical to box height */
+
+
+        color: #000000;
+        margin-bottom: 10px;
+      }
+      .singer{
+        font-size: 12px;
+        line-height: 17px;
+        /* identical to box height */
+
+
+        color: #7E7E7E;
+        margin-bottom: 11px;
+      }
+      .middle{
+        display: flex;
+        height: 20px;
+        align-items: center;
+        width: 500px;
+        .left{
+          display: flex;
+          align-items: center;
+          .time{
+            font-size: 10px;
+            line-height: 14px;
+            /* identical to box height */
+
+
+            color: #7E7E7E;
+            margin-right: 10px;
+
+          }
+          .volumn{
+            background: url(../images/image3.png) no-repeat center/contain;
+            width: 12px;
+            height:10px;
+            margin-right: 332px;
+          }
+        }
+        .right{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 130px;
+          .lyrics{
+            background: url(../images/image4.png) no-repeat center/contain;
+            width: 20px;
+            height:20px;
+
+          }
+          .download{
+            background: url(../images/image5.png) no-repeat center/contain;
+            width: 20px;
+            height:20px;
+
+          }
+          .share{
+            background: url(../images/image6.png) no-repeat center/contain;
+            width: 20px;
+            height:20px;
+          }
+        }
+
+      }
+      .border{
+        width: 500px;
+        height: 2px;
+        background: #E9E9E9;
+        margin-top:2px;
+        flex:none;
+      }
+      .bottom{
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+        .favourite{
+          background: url(../images/image7.png) no-repeat center/contain;
+          width: 30px;
+          height:30px;
+          margin-right: 40px;
+        }
+        .delete{
+          background: url(../images/image8.png) no-repeat center/contain;
+          width: 25px;
+          height:30px;
+          margin-right: 135px;
+        }
+        .sequence{
+          background: url(../images/image9.png) no-repeat center/contain;
+          width: 14px;
+          height:10px;
+          margin-right: 20px;
+        }
+        .random{
+          background: url(../images/image10.png) no-repeat center/contain;
+          width: 14px;
+          height:12px;
+          margin-right: 30px;
+        }
+        .last{
+          background: url(../images/image11.png) no-repeat center/contain;
+          width: 25px;
+          height:28px;
+          margin-right: 59.5px;
+        }
+        .play{
+          background: url(../images/image12.png) no-repeat center/contain;
+          width: 30px;
+          height:22px;
+          margin-right: 60.5px;
+        }
+        .next{
+          background: url(../images/image13.png) no-repeat center/contain;
+          width: 25px;
+          height:28px;
+        }
+      }
+      .login{
+        margin-top:50px;
+        width: 300px;
+        height: 30px;
+        background: #EDEDED;
+        font-size: 12px;
+        line-height: 30px;
+        text-align: center;
+        span{
+          color: #2F9842;
+        }
+      }
+
+    }
+    .cover{
+      img{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+      }
+
+    }
+
+
+  }
+
+
+
+  .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 207px;
+    height: 67px;
+    font-size: 12px;
+    line-height: 17px;
+    /* identical to box height */
+
+
+    color: #2F9842;
+    .left{
+      display: flex;
+      align-items: center;
+      .mhz{
+        background: url(../images/image16.png) no-repeat center/contain;
+        width: 24px;
+        height:24px;
+        margin-right:2px;
+      }
+      .text{
+        margin-right:50px;
+      }
+    }
+    .right{
+      display: flex;
+      align-items: center;
+      .collection{
+        background: url(../images/image17.png) no-repeat center/contain;
+        width: 17px;
+        height:17px;
+        margin-right:2px;
+      }
+      .text{
+        color: #979797;
+      }
+    }
+
+
+  }
+
+
+}

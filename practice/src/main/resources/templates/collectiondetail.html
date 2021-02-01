@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>歌单详情</title>
+    <link href="/css/collectiondetail.css" rel="stylesheet">
+</head>
+<body>
+<div th:replace="head::head"></div>
+<div th:replace="share::share"></div>
+<div class="container">
+    <div class="back">
+        <img src="/images/image34.png">
+        <span>返回</span>
+    </div>
+    <div class="box">
+        <div class="twocode">
+            <div class="top">
+                <img th:src="${subject.cover}">
+                <div class="title">
+                    <div class="name" th:text="${subject.name}"></div>
+                    <div class="profession">歌单</div>
+                </div>
+            </div>
+            <div class="center">
+                <img src="/images/image29.png">
+                <div class="scan">扫描分享到微信</div>
+            </div>
+            <div class="bottom">
+                <img src="/images/image30.png">
+                <img src="/images/image31.png">
+                <img src="/images/image32.png">
+                <img src="/images/image33.png">
+            </div>
+        </div>
+        <div class="top">
+            <img th:src="${subject.cover}">
+            <div class="title">
+                <div class="txt" th:text="${subject.name}"></div>
+                <div th:if="${subject.songIds != null}" class="create">[[${subject.mastername}]]创建[[${subject.songIds.size()}]]首歌曲 [[${subject.gmtCreated}]]</div>
+            </div>
+            <div class="share">
+                <img src="/images/image6.png">
+            </div>
+        </div>
+        <div class="subjectList">
+            <div class="songs" th:if="${subject.songIds != null}" >歌曲歌单([[${subject.songIds.size()}]])</div>
+            <div class="othercollections" th:if="${otherSubjects.size()}!=0">[[${subject.mastername}]]的其他歌单([[${otherSubjects.size()}]])</div>
+        </div>
+        <div class="border"></div>
+        <div class="songList">
+            <ul>
+                <li th:each="data,it: ${dataList}">
+                    <img th:src="${data.song.cover}" referrerPolicy="no-referrer">
+                    <a th:href="${data.song.url}">[[${it.count}]].[[${data.song.name}]]-[[${data.singers.name}]]</a>
+                </li>
+            </ul>
+        </div>
+        <div class="othercollectionsList">
+            <ul>
+                <li th:each="otherSubject : ${otherSubjects}">
+                    <img th:src="${otherSubject.cover}">
+                    <div class="info">
+                        <a class="name">[[${otherSubject.name}]]</a>
+                        <div class="number" th:if="${otherSubject.songIds != null}">[[${otherSubject.songIds.size()}]]首歌 0收藏</div>
+                        <div class="time">[[${otherSubject.gmtModified}]]更新</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="close">
+        <img src="/images/image36.png">
+    </div>
+</div>
+<script src="/js/collectiondetail.js"></script>
+</body>
+</html>

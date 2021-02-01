@@ -1,0 +1,131 @@
+ul {
+  padding: 0;
+  margin: 0; }
+
+ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fbfbfb;
+  margin: 0; }
+
+.content {
+  margin: 100px 0 100px 0;
+  width: 1040px; }
+  .content .login {
+    display: flex;
+    margin-right: 30px;
+    margin-top: 33px;
+    align-items: center;
+    justify-content: flex-end; }
+    .content .login .hasaccount {
+      font-size: 12px;
+      line-height: 17px;
+      color: #2F9842;
+      margin-right: 5px; }
+    .content .login img {
+      width: 13px;
+      height: 13px; }
+  .content .title {
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 42px;
+    color: #000000;
+    width: 540px;
+    margin: 0 auto;
+    margin-top: 63px; }
+  .content ul {
+    margin-top: 60px;
+    padding: 0 140px 0 140px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+    .content ul li {
+      width: 100px;
+      display: flex;
+      margin-right: 65px;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px; }
+      .content ul li img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 10px; }
+      .content ul li div {
+        text-align: center;
+        width: 100px;
+        font-size: 12px;
+        line-height: 17px;
+        color: #000000;
+        margin-bottom: 11px; }
+      .content ul li button {
+        font-size: 12px;
+        line-height: 17px;
+        color: #FF4874;
+        border: 1px solid #FF4874;
+        box-sizing: border-box; }
+      .content ul li:nth-child(5) {
+        margin-right: 0px; }
+      .content ul li:nth-child(10) {
+        margin-right: 0px; }
+  .content .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 50px; }
+    .content .top .refresh {
+      display: flex;
+      align-items: center;
+      margin-right: 48px; }
+      .content .top .refresh img {
+        width: 14px;
+        height: 13px;
+        margin-right: 5px; }
+      .content .top .refresh div {
+        font-size: 12px;
+        line-height: 17px;
+        color: #000000; }
+    .content .top .search {
+      display: flex;
+      align-items: center; }
+      .content .top .search img {
+        width: 12px;
+        height: 12px;
+        margin-right: 7px; }
+      .content .top .search div {
+        font-size: 12px;
+        line-height: 17px;
+        color: #000000; }
+  .content .center {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center; }
+    .content .center .img {
+      width: 330px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .content .center img {
+      width: 50px;
+      height: 50px; }
+  .content .skip {
+    display: flex;
+    justify-content: center; }
+    .content .skip div {
+      font-size: 12px;
+      line-height: 17px;
+      color: #AEAEAE;
+      margin-right: 5px; }
+    .content .skip img {
+      width: 13px;
+      height: 13px; }
+
+/*# sourceMappingURL=userguide.css.map */

@@ -1,0 +1,95 @@
+body {
+  margin: 0; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.content {
+  box-sizing: border-box;
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 79px; }
+  .content .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    line-height: 17px;
+    color: #979797; }
+    .content .top .mhz {
+      display: flex;
+      align-items: center; }
+      .content .top .mhz .img {
+        background: url(../images/image16.png) no-repeat center/contain;
+        width: 24px;
+        height: 24px;
+        margin-right: 2px; }
+      .content .top .mhz .text {
+        color: #2F9842;
+        margin-right: 50px; }
+    .content .top .collection {
+      display: flex;
+      align-items: center; }
+      .content .top .collection .img {
+        background: url(../images/image17.png) no-repeat center/contain;
+        width: 17px;
+        height: 17px;
+        margin-right: 7px; }
+      .content .top .collection .text {
+        margin-right: 50px; }
+    .content .top .my {
+      display: flex;
+      align-items: center; }
+      .content .top .my .img {
+        background: url(../images/image21.png) no-repeat center/contain;
+        width: 16px;
+        height: 14px;
+        margin-right: 7px; }
+  .content .redheart {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 49px;
+    margin-top: 40px; }
+    .content .redheart .txt {
+      font-size: 12px;
+      line-height: 17px;
+      color: #2F9842; }
+  .content .redsongs {
+    border-bottom: 1px solid #EAEAEA;
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center; }
+    .content .redsongs img {
+      width: 42px;
+      height: 42px;
+      margin-right: 20px; }
+    .content .redsongs span {
+      font-size: 12px;
+      line-height: 17px;
+      color: #9C9C9C; }
+  .content .songList {
+    margin-top: 25px;
+    margin-bottom: 100px; }
+    .content .songList ul li {
+      display: flex;
+      align-items: center; }
+      .content .songList ul li img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px; }
+      .content .songList ul li a {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #212121; }
+
+/*# sourceMappingURL=my.css.map */

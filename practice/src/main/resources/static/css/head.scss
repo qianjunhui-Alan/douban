@@ -1,0 +1,126 @@
+body{
+  margin: 0;
+}
+
+.head{
+  padding-top:22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .logo{
+    background: url(../images/image1.png) no-repeat center / contain;
+    width: 80px;
+    height: 32px;
+    margin-right: 75px;
+  }
+  .info{
+    width: 390px;
+    .title{
+      font-size: 14px;
+      line-height: 20px;
+      color: #000000;
+      margin-bottom: 4px;
+    }
+    .border{
+      height: 2px;
+      width: 390px;
+      background: #E9E9E9;
+    }
+    .others{
+      display: flex;
+      justify-content:space-between;
+      .left{
+        display: flex;
+        margin-top: 6px;
+        align-items: center;
+        .singer{
+          font-size: 12px;
+          line-height: 17px;
+          color: #2F9842;
+          margin-right: 6px;
+        }
+        .arrow{
+          background: url(../images/image2.png) no-repeat center / contain;
+          width: 8px;
+          height: 15px;
+        }
+      }
+      .right{
+        display: flex;
+        align-items: center;
+        margin-top: 2px;
+        .time{
+          font-size: 10px;
+          line-height: 14px;
+          color: #7E7E7E;
+          margin-right: 10px;
+        }
+        .volumn{
+          background: url(../images/image3.png) no-repeat center / contain;
+          width: 12px;
+          height: 10px;
+        }
+      }
+    }
+  }
+  .button{
+    margin-left: 50px;
+    margin-right: 72px;
+    display: flex;
+    align-items: center;
+    .favourite{
+      background: url(../images/image7.png) no-repeat center/contain;
+      width: 20px;
+      height:20px;
+      margin-right: 25px;
+    }
+    .delete{
+      background: url(../images/image8.png) no-repeat center/contain;
+      width: 18px;
+      height:20px;
+      margin-right: 49px;
+    }
+    .sequence{
+      background: url(../images/image9.png) no-repeat center/contain;
+      width: 14px;
+      height:10px;
+      margin-right: 72px;
+    }
+    .random{
+      background: url(../images/image10.png) no-repeat center/contain;
+      width: 14px;
+      height:12px;
+      margin-right: 15px;
+    }
+    .last{
+      background: url(../images/image11.png) no-repeat center/contain;
+      width: 18px;
+      height:20px;
+      margin-right: 25.4px;
+    }
+    .play{
+      background: url(../images/image12.png) no-repeat center/contain;
+      width: 24px;
+      height:18px;
+      margin-right: 25px;
+    }
+    .next{
+      background: url(../images/image13.png) no-repeat center/contain;
+      width: 18px;
+      height:20px;
+      margin-right: 15px;
+    }
+  }
+  .login{
+    font-size: 12px;
+    line-height: 17px;
+    color: #B3B3B3;
+    margin-right: 20px;
+
+  }
+  .bottom-arrow{
+    background: url(../images/image18.png) no-repeat center/contain;
+    width: 20px;
+    height:20px;
+  }
+}

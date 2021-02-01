@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>歌单</title>
+    <link rel="stylesheet" href="/css/collection.css">
+</head>
+<body>
+<div th:fragment="collection">
+    <div th:replace="head::head" ></div>
+    <div class="content">
+        <div class="top">
+            <div class="mhz">
+                <div class="img"></div>
+                <div class="text">兆赫</div>
+            </div>
+            <div class="collection">
+                <div class="img"></div>
+                <div class="text">歌单</div>
+            </div>
+            <div class="my">
+                <div class="img"></div>
+                <div class="text">我的</div>
+            </div>
+        </div>
+        <div class="collections">
+            <div th:each="subject ,it: ${subjects}" class="collection" >
+                <img th:src="${subject.cover}" referrerPolicy="no-referrer">
+                <a th:href="'/collectiondetail/?subjectId='+${subject.id}" class="title" th:text="${subject.name}"></a>
+                <div class="master">
+                    <div class="name" th:text="${subject.mastername}"></div>
+                    <span>创建</span>
+                </div>
+                <div th:each="data,it: ${datasList.get(subject.getId())}" th:classappend="${it.count} > 4 ?'none':''"  class="songList">
+                    <div>[[${data.song.getName()}]]-[[${data.singers.getName()}]]</div>
+                </div>
+                <div class="bottom">
+                    <div class="number" th:if="${subject.songIds!=null}"  th:text="'曲目:'+${subject.songIds.size()}"></div>
+                    <span>收藏 0</span>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+</body>
+</html>

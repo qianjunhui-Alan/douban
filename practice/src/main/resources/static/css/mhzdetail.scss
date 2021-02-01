@@ -1,0 +1,256 @@
+ul{
+  padding: 0;
+  margin: 0;
+}
+
+ul li{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  width: 100%;
+}
+.content{
+  border: 1px solid #eaeaea;
+  box-sizing: border-box;
+  width: 786px;
+  margin: 0 auto;
+  margin-top: 79px;
+  .twocode{
+    display: none;
+    background: #FFFFFF;
+    z-index: 1000;
+    position: fixed;
+    margin-left: -128px;
+    left: 50%;
+    top: 70px;
+    width: 194px;
+    padding: 25px 30px 25px 30px;
+    border: 1px solid #EAEAEA;
+    .top{
+      display: flex;
+      align-items: center;
+      padding-bottom: 24px;
+      border-bottom: 1px #F1F1F1 solid;
+      img{
+        width: 48px;
+        height: 48px;
+        border-radius:50%;
+        margin-right: 15px;
+      }
+      .title{
+        .name{
+          font-size: 12px;
+          line-height: 17px;
+          color: #000000;
+          margin-bottom: 2px;
+        }
+        .profession{
+          font-size: 12px;
+          line-height: 17px;
+          color: #A4A4A4;
+        }
+
+      }
+    }
+    .center{
+      margin: 0 auto;
+      width: 120px;
+      margin-top: 20px;
+
+      img{
+        width: 120px;
+        height: 120px;
+        margin-bottom: 3px;
+      }
+      .scan{
+        text-align: center;
+        font-size: 12px;
+        line-height: 17px;
+        color: #BABABA;
+        margin-bottom: 20px;
+      }
+    }
+    .bottom{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img{
+        width: 20px;
+        height: 20px;
+        margin-right:15px;
+        &:nth-child(4){
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+  .share{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 40px;
+    margin-right: 40px;
+    img{
+      width: 20px;
+      height: 20px;
+      margin-right:10px;
+    }
+    span{
+      font-size: 14px;
+      line-height: 20px;
+      color: #9A9A9A;
+    }
+  }
+  .info{
+    width: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -10px;
+    img{
+      width: 200px;
+      height: 200px;
+      margin-bottom: 30px;
+      border-radius: 50%;
+    }
+    div{
+      font-size: 30px;
+      line-height: 42px;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+    button{
+      border: 1px solid #D7D7D7;
+      box-sizing: border-box;
+      font-size: 12px;
+      line-height: 17px;
+      color: #C5C5C5;
+      background: #FFFFFF;
+      margin-bottom: 40px;
+      cursor: pointer;
+    }
+    .has-like{
+      border: 1px solid #FF4874;
+      box-sizing: border-box;
+      color: #FF4874;
+    }
+  }
+  .allsongs{
+    border-bottom: 1px solid #EAEAEA;
+    border-top: 1px solid #EAEAEA;
+    width: 586px;
+    box-sizing: border-box;
+    margin: 0 93px 0 107px;
+    .play{
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 19px;
+      img{
+        width: 11px;
+        height: 14px;
+        margin-right: 10px;
+      }
+      span{
+        font-size: 12px;
+        line-height: 17px;
+        color: #2F9842;
+      }
+    }
+    ul{
+      li{
+        display: flex;
+        align-items: center;
+        margin-bottom: 18px;
+        img{
+          width: 20px;
+          height: 20px;
+          margin-right: 10px;
+        }
+        a{
+          font-size: 12px;
+          line-height: 17px;
+          color: #000000;
+        }
+      }
+      .hidden{
+        display: none;
+      }
+    }
+    .view{
+      font-size: 12px;
+      line-height: 17px;
+      color: #AFAFAF;
+      margin-bottom: 40px;
+    }
+  }
+
+  .simsingers{
+    width: 571px;
+    margin: 0 auto;
+    margin-top: 40px;
+    .play{
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      img{
+        width:11px;
+        height: 14px;
+        margin-right: 10px;
+      }
+      span{
+        font-size: 12px;
+        line-height: 17px;
+        color: #2F9842;
+      }
+    }
+    .simsongs{
+      font-size: 12px;
+      line-height: 17px;
+      color: #AFAFAF;
+      margin-bottom: 76px;
+    }
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100px;
+        margin-bottom: 40px;
+        margin-right: 57px;
+        img{
+          width:100px;
+          height: 100px;
+          margin-bottom: 20px;
+          border-radius: 50%;
+        }
+        a{
+          font-size: 14px;
+          line-height: 20px;
+          color: #000000;
+          text-align: center;
+        }
+        &:nth-child(4){
+          margin-right: 0;
+        }
+        &:nth-child(8){
+          margin-right: 0;
+        }
+      }
+
+    }
+  }
+
+
+}

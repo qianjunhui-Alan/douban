@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>head</title>
+</head>
+<body>
+<div th:fragment="head" class="head">
+    <link rel="stylesheet" href="/css/head.css">
+    <div class="logo"></div>
+    <div class="info">
+        <div class="title">[[${song.name}]]</div>
+        <div class="border"></div>
+        <div class="others">
+            <div class="left">
+                <div class="singer">[[${singers.name}]]</div>
+                <div class="arrow"></div>
+            </div>
+            <div class="right">
+                <div class="time">-03:34</div>
+                <div class="volumn"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="button">
+        <div class="favourite"></div>
+        <div class="delete"></div>
+        <div class="random"></div>
+        <div class="last"></div>
+        <div class="play"></div>
+        <div class="next"></div>
+        <div class="sequence"></div>
+    </div>
+    <div class="login">登录 I 注册</div>
+    <div class="bottom-arrow"></div>
+</div>
+
+</body>
+</html>
